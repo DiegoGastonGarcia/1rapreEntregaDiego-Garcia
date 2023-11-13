@@ -3,11 +3,11 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
 
-function App() {
+export function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer />
+      <ItemListContainer mensaje=" Soy una lista de items " />
     </>
   );
 }
