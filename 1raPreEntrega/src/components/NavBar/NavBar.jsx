@@ -1,7 +1,7 @@
 import React from "react";
-import Cart from "./cart";
+import { Cart } from "../Cart/Cart";
 
-const NavBar = () => {
+export const NavBar = () => {
   return (
     <div>
       <nav class="navbar bg-body-tertiary fixed-top">
@@ -43,5 +43,3 @@ const NavBar = () => {
     </div>
   );
 };
-
-export default NavBar;

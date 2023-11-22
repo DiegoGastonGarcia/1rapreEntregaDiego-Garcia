@@ -1,6 +1,6 @@
 import React from "react";
 
-const ItemListContainer = (props) => {
+export const ItemListContainer = (props) => {
   return (
     <>
       <div>
@@ -9,5 +9,3 @@ const ItemListContainer = (props) => {
     </>
   );
 };
-
-export default ItemListContainer;
