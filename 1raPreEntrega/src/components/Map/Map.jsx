@@ -10,8 +10,7 @@ export const Map = () => {
       .catch((error) => console.log(error));
   }, []);
   return (
-    <div class='container-fluid d-grid'>
-      <h2>Productos disponibles</h2>
+    <div class='container-fluid d-flex'>
       {products.map((product) => (
         <Item
           key={product.id}

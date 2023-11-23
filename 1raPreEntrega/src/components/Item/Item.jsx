@@ -2,8 +2,8 @@ import "./item.css";
 
 export const Item = ({ name, type, stock }) => {
   return (
-    <div class='container-fluid d-flex flex-column '>
-      <div class='card'>
+    <div class='container-fluid d-flex '>
+      <div class='card '>
         {/* <div class="image">
         <img src="" />
       </div> */}
@@ -13,7 +13,7 @@ export const Item = ({ name, type, stock }) => {
             <h5> {type} </h5>
           </div>
           <div class='content'>
-            <p>Cantidad disponible {stock} </p>
+            <p>Cantidad disponible: {stock} </p>
           </div>
         </div>
       </div>
