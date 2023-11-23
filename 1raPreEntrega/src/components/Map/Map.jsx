@@ -1,17 +1,24 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { getProducts } from "../productsMock";
+import { Item } from "../Item/Item";
 
 export const Map = () => {
+  const [products, setProducts] = useState([]);
   useEffect(() => {
     getProducts()
-      .then((response) => console.log(response))
+      .then((response) => setProducts(response))
       .catch((error) => console.log(error));
   }, []);
   return (
-    <div>
+    <div class='container-fluid d-grid'>
       <h2>Productos disponibles</h2>
-      {products.map((products) => (
-        <p>Nombre: {products.name}</p>
+      {products.map((product) => (
+        <Item
+          key={product.id}
+          name={product.name}
+          type={product.type}
+          stock={product.stock}
+        />
       ))}
     </div>
   );
