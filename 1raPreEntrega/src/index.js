@@ -1,8 +1,11 @@
 export { default as App } from "./App";
 export * from "./components/Cart/Cart";
+export * from "./components/Count/Count";
 export * from "./components/Item/Item";
+export * from "./components/ItemDetail/ItemDetail";
+export * from "./components/ItemDetailContainer/ItemDetailContainer";
+export * from "./components/ItemList/ItemList";
 export * from "./components/ItemListContainer/ItemListContainer";
-export * from "./components/Map/Map";
 export * from "./components/NavBar/NavBar";
 export * from "./components/productsMock";
 export * from "./main";
